@@ -1,6 +1,15 @@
 # TP I - Programación IV: FastAPI ABM (Backend)
 
-Repositorio correspondiente al Trabajo Práctico de la materia **Programación IV**, implementando una API REST con operaciones ABM (Alta, Baja, Modificación y consulta / CRUD) utilizando **FastAPI**, validación de datos con **Pydantic** y ejecución mediante el servidor ASGI **Uvicorn**.
+Repositorio correspondiente al Trabajo Práctico de la materia **Programación IV**, implementando una API REST con operaciones ABM (Alta, Baja, Modificación y consulta / CRUD) utilizando **FastAPI**, validación de datos con **Pydantic** y ejecución mediante **Uvicorn**.
+
+Dentro del Trabajo práctico, se completó lo pedido del abm de la carpeta **clase-fastapi**, así como se creó un abm con una entidad propia a elección. En este caso,
+se eligió la entidad de **Films**, películas donde se puedan listar y filtrar por rating, crear, actualizar y borrar.
+Las películas están compuestas de:
+- id
+- name 
+- year 
+- rating 
+- studio
 
 ---
 
@@ -19,6 +28,12 @@ Abre tu terminal y clona el proyecto (o descárgalo y descomprímelo):
 ```bash
 git clone https://github.com/adlfvrr/TP_I-Programacion_IV-FastAPI_ABM-ABM_Propio.git
 cd TP_I-Programacion_IV-FastAPI_ABM-ABM_Propio
+```
+Elegimos uno de los dos proyectos dentro, ya sea clase-fastapi, como abm-entidad-propia
+```bash
+cd clase-fastapi
+--
+cd abm-entidad-propia
 ```
 
 ### 2. Crear el entorno virtual
@@ -78,7 +93,7 @@ Una vez que la aplicación esté corriendo, puedes acceder a la documentación i
 * **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 * **ReDoc (Alternativa):** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
-## Endpoints disponibles (ver Swagger para detalles)
+## Endpoints disponibles -ABM FILMS- (ver Swagger para detalles)
 - GET - /films/{ rating } - Query param vacío devuelve todas las películas. Se ingresa un rating (0-10), se filtran por el mismo -
 - POST - /films - Creación de película, respetando el rango de rating (0-10) y año (1970-2026) de las películas -
 - PUT - /films/{id}?{query's params} - Actualización de datos de películas, pasando datos como nombre, rating, año y estudio como query params -
