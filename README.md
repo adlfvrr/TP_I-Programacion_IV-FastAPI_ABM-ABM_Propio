@@ -41,7 +41,7 @@ Es una buena práctica aislar las dependencias del proyecto en un entorno virtua
 
 * **En Windows (CMD / PowerShell):**
   ```bash
-  python -m venv venv
+  python -m venv .venv
   ```
 * **En Linux / macOS:**
   ```bash
@@ -57,7 +57,7 @@ Activa el entorno virtual antes de instalar las dependencias:
   ```
 * **En Windows (PowerShell):**
   ```powershell
-  venv\Scripts\Activate.ps1
+  .venv\Scripts\Activate.ps1
   ```
 * **En Linux / macOS:**
   ```bash
