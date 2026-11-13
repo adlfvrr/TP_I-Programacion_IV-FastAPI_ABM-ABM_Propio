@@ -18,3 +18,6 @@ class CreateUserResponse(BaseModel):
 
 class DeleteUserResponse(BaseModel):
     message: str
+
+class UpdateUserResponse(BaseModel):
+    message: str
