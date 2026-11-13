@@ -77,3 +77,9 @@ Una vez que la aplicación esté corriendo, puedes acceder a la documentación i
 
 * **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 * **ReDoc (Alternativa):** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
+## Endpoints disponibles (ver Swagger para detalles)
+- GET - /films/{ rating } - Query param vacío devuelve todas las películas. Se ingresa un rating (0-10), se filtran por el mismo -
+- POST - /films - Creación de película, respetando el rango de rating (0-10) y año (1970-2026) de las películas -
+- PUT - /films/{id}?{query's params} - Actualización de datos de películas, pasando datos como nombre, rating, año y estudio como query params -
+- DELETE - /films/{id} - Borrado de película por id 
